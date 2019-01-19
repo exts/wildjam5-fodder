@@ -13,5 +13,6 @@ animations = [ {
 
 [node name="BlinkingController" type="AnimatedSprite"]
 frames = SubResource( 1 )
+frame = 1
 playing = true
 
