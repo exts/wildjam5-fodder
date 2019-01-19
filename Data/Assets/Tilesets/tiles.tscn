@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Data/Assets/Art/Tiles/blockRed.png" type="Texture" id=1]
+[ext_resource path="res://Data/Assets/Art/Tiles/blockRed_key.png" type="Texture" id=2]
+[ext_resource path="res://Data/Assets/Art/Tiles/blockRed_puzzle.png" type="Texture" id=3]
+[ext_resource path="res://Data/Assets/Art/Tiles/blockGrey.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+extents = Vector2( 31.9602, 32.2042 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blockRed" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blockRed"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blockRed/StaticBody2D"]
+position = Vector2( 32, 32 )
+shape = SubResource( 1 )
+
+[node name="blockRed_key" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blockRed_key"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blockRed_key/StaticBody2D"]
+position = Vector2( 32, 32 )
+shape = SubResource( 1 )
+
+[node name="blockRed_puzzle" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blockRed_puzzle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blockRed_puzzle/StaticBody2D"]
+position = Vector2( 32, 32 )
+shape = SubResource( 1 )
+
+[node name="blockGrey" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="blockGrey"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blockGrey/StaticBody2D"]
+position = Vector2( 32, 32 )
+shape = SubResource( 1 )
+
