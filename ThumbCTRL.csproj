@@ -52,6 +52,7 @@
     <Compile Include="Core\Game.cs" />
     <Compile Include="Core\Joystick.cs" />
     <Compile Include="Core\LevelFactory.cs" />
+    <Compile Include="Core\Scenes.cs" />
     <Compile Include="Core\Scripts\Checkpoint.cs" />
     <Compile Include="Core\Scripts\Exit.cs" />
     <Compile Include="Core\Scripts\Key.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Core\Scripts\Player.cs" />
     <Compile Include="Core\Scripts\Puzzle.cs" />
     <Compile Include="Core\Scripts\Scenes\Main.cs" />
+    <Compile Include="Core\Scripts\Scenes\Menu.cs" />
     <Compile Include="Core\Scripts\Trigger.cs" />
     <Compile Include="Core\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
