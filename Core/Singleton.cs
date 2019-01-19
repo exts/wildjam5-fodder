@@ -9,6 +9,7 @@ namespace ThumbCTRL.Core
 
         private bool _setup;
         private Viewport _root;
+        private Scenes Scenes = new Scenes();
         
         private Singleton()
         {
@@ -39,9 +40,9 @@ namespace ThumbCTRL.Core
             return GetRoot().GetNode<Game>("Game");
         }
 
-        /*public static void SwitchScenes(Scenes.Name name)
+        public static void SwitchScenes(Scenes.Scene scene)
         {
-            GameApp().SwitchScene(Instance.Scenes.Path(name));
-        }*/
+            Game().SwitchScene(Instance.Scenes.Path(scene));
+        }
     }
 }
