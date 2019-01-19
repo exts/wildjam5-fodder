@@ -67,6 +67,9 @@ position = Vector2( 865.031, 159.989 )
 [node name="Checkpoint7" parent="Checkpoints" instance=ExtResource( 6 )]
 position = Vector2( 544.694, 416.222 )
 
+[node name="Checkpoint8" parent="Checkpoints" instance=ExtResource( 6 )]
+position = Vector2( 868.772, 545.853 )
+
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Key1" parent="Items" instance=ExtResource( 7 )]

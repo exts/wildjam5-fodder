@@ -4,7 +4,7 @@ namespace ThumbCTRL.Core.Scripts.Levels
 {
     public class Level : Node2D
     {
-        [Signal] public delegate void Gameover();
+        [Signal] public delegate void GameOver();
         [Signal] public delegate void SwitchLevel();
 
         protected Player Player;

@@ -24,7 +24,7 @@ namespace ThumbCTRL.Core.Scripts.Levels
 
         public void ExitLevel()
         {
-            EmitSignal(nameof(Gameover));
+            EmitSignal(nameof(GameOver));
         }
     }
 }

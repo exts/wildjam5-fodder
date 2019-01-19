@@ -58,10 +58,9 @@
     <Compile Include="Core\Scripts\Levels\Level.cs" />
     <Compile Include="Core\Scripts\Levels\Level1.cs" />
     <Compile Include="Core\Scripts\Levels\Level2.cs" />
-    <Compile Include="Core\Scripts\Main.cs" />
     <Compile Include="Core\Scripts\Player.cs" />
     <Compile Include="Core\Scripts\Puzzle.cs" />
-    <Compile Include="Core\Scripts\TestScene.cs" />
+    <Compile Include="Core\Scripts\Scenes\Main.cs" />
     <Compile Include="Core\Scripts\Trigger.cs" />
     <Compile Include="Core\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
