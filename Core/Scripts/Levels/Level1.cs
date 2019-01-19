@@ -33,7 +33,7 @@ namespace ThumbCTRL.Core.Scripts.Levels
 
         public void ExitLevel()
         {
-            GD.Print("Good job!");
+            EmitSignal(nameof(SwitchLevel), 2);
         }
     }
 }
