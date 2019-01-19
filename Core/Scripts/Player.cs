@@ -67,7 +67,7 @@ namespace ThumbCTRL.Core.Scripts
         {
             if(node?.Collider is TileMap tilemap)
             {
-                var offset = GetCellOffset(node);
+                var offset = GetCellOffset(node, tilemap);
                 var (_, location) = GetCellLocation(offset, tilemap);
 
                 switch(tilemap.Name)
@@ -95,29 +95,29 @@ namespace ThumbCTRL.Core.Scripts
         
         public (int, Vector2) GetCellLocation(Vector2 offset, TileMap map)
         {
-            //TODO: Figure out why the hell this only works when you run it from the level1 scene
-            var location = map.WorldToMap(map.ToLocal(Position));
+            var location = map.WorldToMap(map.ToLocal(GlobalPosition));
             location += offset;
 
             return (map.GetCellv(location), location);
         }
         
-        public Vector2 GetCellOffset(KinematicCollision2D node)
+        public Vector2 GetCellOffset(KinematicCollision2D node, TileMap map)
         {
             var offset = new Vector2();
+            var position = map.ToLocal(node.Position);
             
-            if(node.Position.x > Position.x)
+            if(position.x > Position.x)
             {
                 offset.x += 1;
-            } else if(node.Position.x < Position.x)
+            } else if(position.x < Position.x)
             {
                 offset.x -= 1;
             }
             
-            if(node.Position.y > Position.y)
+            if(position.y > Position.y)
             {
                 offset.y += 1;
-            } else if(node.Position.y < Position.y)
+            } else if(position.y < Position.y)
             {
                 offset.y -= 1;
             }
