@@ -63,6 +63,7 @@
     <Compile Include="Core\Scripts\Puzzle.cs" />
     <Compile Include="Core\Scripts\Scenes\Main.cs" />
     <Compile Include="Core\Scripts\Scenes\Menu.cs" />
+    <Compile Include="Core\Scripts\Scenes\Thanks.cs" />
     <Compile Include="Core\Scripts\Trigger.cs" />
     <Compile Include="Core\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
