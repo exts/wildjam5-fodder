@@ -19,14 +19,19 @@ namespace ThumbCTRL.Core
         {
             if(Input.IsActionPressed("ui_quit"))
             {
-                GetTree().Quit(); // default behavior
+                Quit();
             }
         }
         
         public override void _Notification(int what)
         {
             if (what == MainLoop.NotificationWmQuitRequest)
-                GetTree().Quit(); // default behavior
+                Quit();
+        }
+
+        public void Quit()
+        {
+            GetTree().Quit(); // default behavior
         }
 
         public void SwitchScene(string path)
