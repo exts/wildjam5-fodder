@@ -57,7 +57,7 @@ namespace ThumbCTRL.Core.Scripts.Scenes
 
         public void GameOver()
         {
-            GD.Print("Thanks for playing!");
+            Singleton.SwitchScenes(Core.Scenes.Scene.Thanks);
         }
     }
 }
